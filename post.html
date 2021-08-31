@@ -1,0 +1,61 @@
+<html>
+
+    <title>Dollar to Euro | Euro to Dollar</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+  <style>
+  * {color:#000;text-decoration:none}
+    html {background:#fafafa}
+    body {background:#fff;padding:15px;box-sizing:border-box;margin:0 auto;width:80%}
+@media (max-width:1024px) {
+body {width:100%}
+}
+    </style>
+  <body> 
+
+<style>
+span a {font-size:13px}
+iframe {margin:0 !important}
+	body {padding:0 !important}
+</style>
+
+<div style='padding:25px 25px 0 25px;box-sizing:border-box'>
+<b><a href='/'>KPOP Dance Tutorial</a></b><br>
+<span><a href='/'>Girls</a> <a href='/boys'>Boys</a></span><br>
+
+	<form style='padding:0;margin:0' action="/search" method="get">
+		<input type="text" placeholder="Search" name="q" style="outline:none;width:100%;padding:30px !important;height:45px;border:0;box-sizing:border-box" required size="50" maxlength="255">
+	</form>
+</div>
+
+<script>
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var uid = getParameterByName('q');
+
+document.write("\
+<iframe src=\"https://www.youtube.com/embed/"+uid+"?amp;autoplay=1&amp;playlist="+uid+"&amp;loop=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" style=\"width:100%;height:600px\"></iframe>");
+</script>
+<div style='padding:0 25px 25px 25px;box-sizing:border-box'>
+<div style='padding:25px;border:1px solid #eee;margin:3px 0'>
+<div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://kpop-9.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//kpop-9.disqus.com/count.js" async></script>
+</div>
+</div></div>
+
+  </body>
+</html>
