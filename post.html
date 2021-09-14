@@ -24,6 +24,46 @@ iframe {margin:0 !important}
 <script src='/1/head.js'></script>	
 </div>
 
+<style>
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#yt {display:none}
+</style>
+
+<div id="ads" style='background:#fafafa;width:100%;border-radius:5px'>
+<div style='margin:0 auto !important;width:350px'>
+<button onclick="someFunctions()" type="button" style='padding:0;position:relative;outline:0;background:#000;border:0;color:#fff;top:40px;left:30px;overflow:hidden'><t style='font-size:5px'>PLAY</t></button>
+<div id="realssp_chopin042500049_34960" class="realssp_dv" data-mcode="Y2hvcGluMDQyNTAwMDQ5XzM0OTYw" title="리얼클릭 배너광고"></div><script src="//ssp.realclick.co.kr/realclickssp.js?v=1.0&m=chopin042500049_34960&t=j" async></script>
+</div><br></div>
+
+<script type="text/javascript">
+var clicks = 0;
+function someFunctions(){ 
+    clicks++; 
+    switch (clicks){ 
+     case 5:
+      document.getElementById("ads").style.display = 'none';
+	  document.getElementById("yt").style.display = 'block';
+      break; 
+    } 
+} 
+</script>
+
 <script>
 	function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -34,7 +74,7 @@ iframe {margin:0 !important}
 var uid = getParameterByName('q');
 
 document.write("\
-<iframe src=\"https://www.youtube.com/embed/"+uid+"?amp;autoplay=1&amp;playlist="+uid+"&amp;loop=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" style=\"width:100%;height:650px\"></iframe>");
+<iframe id=\"yt\" src=\"https://www.youtube.com/embed/"+uid+"?amp;autoplay=1&amp;playlist="+uid+"&amp;loop=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" style=\"width:100%;height:650px\"></iframe>");
 </script>
 
   </body>
