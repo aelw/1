@@ -1,5 +1,20 @@
+
+
+
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var id = getParameterByName('img');
+
 document.write("\
-<b><a href='/1/5'>Kpop Dance Loop</a></b><br>\n\
+<center>   \n\
+  <img src='http://"+id+"' onerror=\"this.style.display = 'none'\" style='width:150px;height:150px;padding:15px;border-radius:25px'>\n\
+</center>");
+
+document.write("\
 <span style='color:#fafafa'><a href='/1/5'>Girls</a> / <a href='/1/5-1'>Boys</a> / <a href='/1/bp'>Blackpink</a> / <a href='/1/bts'>BTS</a> / <a href='/1/sk'>Stray Kids</a></span><br>\n\
 \n\
 	<form style='padding:0;margin:0' action=\"/1/search\" method=\"get\">\n\
