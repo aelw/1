@@ -11,7 +11,7 @@ var id = getParameterByName('img');
 
 document.write("\
 <center>   \n\
-  <img src='http://"+id+"' onerror=\"this.style.display = 'none'\" style='width:150px;height:150px;padding:15px;border-radius:25px'>\n\
+  <img src='http://"+id+"' onerror=\"this.style.display = 'none'\" style='width:80px;height:80px;padding:15px;border-radius:25px'>\n\
 </center>");
 
 document.write("\
