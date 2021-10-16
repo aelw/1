@@ -15,5 +15,5 @@ document.write("\
 </center>");
 
 document.write("\
-<span style='color:#fafafa'><a href='/1/5?img="+id+"'>Girls</a> / <a href='/1/5-1?img="+id+"'>Boys</a> / <a href='/1/bp?img="+id+"'>Blackpink</a> / <a href='/1/bts?img="+id+"'>BTS</a> / <a href='/1/sk?img="+id+"'>Stray Kids</a></span><br>\n\
+<span style='color:#fafafa'><a href='/1/5?img="+id+"'>Home</a> / <a href='/1/bp?img="+id+"'>Blackpink</a> / <a href='/1/bts?img="+id+"'>BTS</a> / <a href='/1/sk?img="+id+"'>Stray Kids</a></span><br>\n\
 <span><br>");
